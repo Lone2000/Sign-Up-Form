@@ -25,6 +25,7 @@ main>div {
 .logo{
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 
@@ -40,6 +41,19 @@ img+span{
     font-size: 1.3rem;
 }
 
+
+.video{
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+video{
+    width: 50%;
+}
+
+
 /* Right */
 
 .right{
@@ -47,15 +61,21 @@ img+span{
     background-position-x:30% ;
     background-size:cover;
     background-repeat: no-repeat;
-}
-
-
-.right > .form-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(95,154,176, 0.6);
+}
+
+
+.right > .form-container{
+    width: 50%;
+    height: auto;
+    /* background-color: rgba(95,154,176, 0.6); */
+    background-color: rgba(0,0,0,0.6);
+    text-align: center;
+    border-radius: 30px;
+    color: white;
 
 }
 
@@ -66,4 +86,13 @@ label{
 
 input{
     margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+input:invalid {
+    background-color: ivory;
+    border: none;
+    outline: 2px solid red;
+    border-radius: 5px;
 }
